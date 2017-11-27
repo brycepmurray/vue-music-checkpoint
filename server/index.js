@@ -3,23 +3,16 @@ var cors = require('cors')
 var bp = require('body-parser')
 var server = express()
 var port = 3000
-
-//MIDDLEWARE
+var playlistRoutes = require('./routes/playlist-routes')
+    //MIDDLEWARE
 
 server.use(cors({})) //make cors loaded first in the middleware
 server.use(bp.json())
 server.use(bp.urlencoded({ extended: true }))
     //routes
 
-//getMyTunes
-
-//addSongToList (GET)
-
-//updateRank (PUT)
-
-//delete track from update list (DELETE)
-
-//ROUTES
+//get playlist
+server.use(playlistRoutes)
 
 server.listen(port, () => {
     console.log('Server Runnning on: ', port)

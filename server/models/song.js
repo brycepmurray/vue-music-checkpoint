@@ -3,9 +3,11 @@ var ObjectId = mongoose.SchemaTypes.ObjectId
 
 var schema = new mongoose.Schema({
     title: { type: String, required: true },
+    albumArt: { Type: String, required: true },
     artist: { type: String },
     album: { type: String },
-    playlistId: { type: ObjectId, ref: 'Playlist', required: true }
+    albumPrice: { type: Number, required: true },
+    rank: { type: Number, required: true, default: 0 }
 
 });
 
