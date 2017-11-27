@@ -1,9 +1,9 @@
-var Playlists = require('../models/playlist')
 var Songs = require('..models/Song')
-var rouer = require('express').Router()
+var Playlists = require('../models/playlist')
+var router = require('express').Router()
 
 router.get('/api/playlist/', (req, res, next) => {
-        songs.find({})
+        Songs.find({})
             .then(songs => {
                 res.send(songs)
             })
@@ -12,7 +12,7 @@ router.get('/api/playlist/', (req, res, next) => {
             })
     })
     //get song at specific Id
-router.get('/api/playlist/songId', (req, res, next) => {
+router.get('/api/playlist/:songId', (req, res, next) => {
     Songs.findById(req.params.songId)
         .then(song => {
             res.send(song)
@@ -34,9 +34,8 @@ router.post('/api/playlist/', (req, res, next) => {
     })
     //delete song from playlist
 router.delete('/api/playlist/:songId' (req, res, next) => {
-        Songs: findById(req.params.songId)
+        Songs: findByIdAndRemove(req.params.songId)
             .then(song => {
-                song.remove()
                 res.send({ message: 'song removed from playlist' })
             })
             .catch(err => {
