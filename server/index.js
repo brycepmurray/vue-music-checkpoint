@@ -3,6 +3,7 @@ var cors = require('cors')
 var bp = require('body-parser')
 var server = express()
 var port = 3000
+var DBConnect = require('./config/mlab/mlab-config')
 var playlistRoutes = require('./routes/playlist-routes')
     //MIDDLEWARE
 
