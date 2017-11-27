@@ -52,3 +52,5 @@ router.put('/api/playlist/:songId', (req, res, next) => {
             res.status(400).send({ Error: err })
         })
 })
+
+module.exports = router
