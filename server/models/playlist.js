@@ -13,4 +13,4 @@ var schema = new mongoose.Schema({
 //    next()
 //});
 
-module.exports = mongoose.models('Playlist', schema)
+module.exports = mongoose.model('Playlist', schema)

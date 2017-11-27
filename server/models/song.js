@@ -3,7 +3,7 @@ var ObjectId = mongoose.SchemaTypes.ObjectId
 
 var schema = new mongoose.Schema({
     title: { type: String, required: true },
-    albumArt: { Type: String, required: true },
+    albumArt: { type: String, required: true },
     artist: { type: String },
     album: { type: String },
     albumPrice: { type: Number, required: true },
