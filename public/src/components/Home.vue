@@ -8,15 +8,16 @@
 </template>
 
 <script>
+    import Itunes from './Itunes'
+    import Mytunes from './Mytunes'
     export default {
         name: 'home',
+        components: {
+            Mytunes,
+            Itunes
+        },
         data() {
             return {
-
-            }
-        },
-        methods: {
-            search() {
 
             }
         }
