@@ -1,8 +1,14 @@
 <template>
   <div class="home">
- <h1 class="text-center">The Beat in Your Song</h1>
-    <my-tunes class="my-tunes"></my-tunes>
-    <itunes class="itunes"></itunes>
+      <h1 class="text-center">The Beat in Your Song</h1>
+      <div class="row">
+          <div class="col-xs-6">
+              <my-tunes class="my-tunes"></my-tunes>
+          </div>
+          <div class="col-xs-6">
+              <itunes class="itunes"></itunes>
+          </div>
+      </div>
   </div>
 </template>
 
@@ -53,12 +59,12 @@
         display: inline-block;
         min-height: 500px;
         min-width: 50%;
-        background: rgba(0, 128, 0, 0.678);
+        background: slategray;
     }
     
     .itunes {
         display: inline-block;
-        background: rgba(255, 0, 0, 0.678);
+        background: royalblue;
         min-height: 500px;
         min-width: 45%;
     }

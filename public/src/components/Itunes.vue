@@ -14,7 +14,7 @@
             <img :src="song.artworkUrl100">
             <h4>Title: {{song.trackName}}</h4>
             <h5>Artist: {{song.artistName}}</h5>
-            <audio controls style="width:auto">
+            <audio controls style="width:30%">
                 <source :src="song.previewUrl">
             </audio>
             <button @click="addToPlaylist(song)" class="btn btn-primary" type="button">Add to Favorites</button>

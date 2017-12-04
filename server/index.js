@@ -14,6 +14,7 @@ server.use(bp.urlencoded({ extended: true }))
 
 //get playlist
 server.use(playlistRoutes)
+server.use(songRoutes)
 
 server.listen(port, () => {
     console.log('Server Runnning on: ', port)
