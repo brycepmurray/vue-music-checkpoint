@@ -3,7 +3,7 @@
       <h1 class="text-center">The Beat in Your Song</h1>
       <div class="row">
           <div class="col-xs-6">
-              <my-tunes class="my-tunes"></my-tunes>
+              <my-tunes class="mytunes"></my-tunes>
           </div>
           <div class="col-xs-6">
               <itunes class="itunes"></itunes>
