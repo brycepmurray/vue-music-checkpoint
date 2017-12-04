@@ -9,7 +9,7 @@
         <div class="col-md-6">
             <h4>Title:{{song.title}}</h4>
             <h5>Artist: {{song.artist}}</h5>
-            <audio controls style="width: auto">
+            <audio controls style="width: 30%">
                     <source :src="song.preview">
                 </audio>
                 <button @click="remove(song._id)" type="button" class="btn btn-primary">
